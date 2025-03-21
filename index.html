@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Solicitud Asistencia Docente</title>
+</head>
+<body>
+   
+    <main class="formulario">
+    <h1>Registro de Asistencias Docentes</h1>
+        <form id="asistenciaForm">
+            <div class="formulario_item">
+                <label for="nombreSoftware">Nombre del Software:</label>
+                <input type="text" id="nombreSoftware" name="nombreSoftware" required>
+                <span class="error-message" id="errorNombreSoftware"></span>
+            </div>
+
+            <div class="formulario_item">
+                <label for="fechaAsistencia">Fecha de la Asistencia:</label>
+                <input type="date" id="fechaAsistencia" name="fechaAsistencia" required>
+                <span class="error-message" id="errorFechaAsistencia"></span>
+            </div>
+
+            <div class="formulario_item">
+                <label for="horaInicio">Hora de Inicio:</label>
+                <input type="time" id="horaInicio" name="horaInicio" required>
+                <span class="error-message" id="errorHoraInicio"></span>
+            </div>
+
+            <div class="formulario_item">
+                <label for="duracion">Duración en Horas:</label>
+                <input type="number" id="duracion" name="duracion" min="1" required>
+                <span class="error-message" id="errorDuracion"></span>
+            </div>
+
+            <div class="formulario_item">
+                <label for="docenteSolicitante">Docente Solicitante (Correo Electrónico):</label>
+                <input type="email" id="docenteSolicitante" name="docenteSolicitante" required>
+                <span class="error-message" id="errorDocenteSolicitante"></span>
+            </div>
+
+            <div class="formulario_item">
+                <label for="monitorAsignado">Monitor Asignado (Correo Electrónico):</label>
+                <input type="email" id="monitorAsignado" name="monitorAsignado" required>
+                <span class="error-message" id="errorMonitorAsignado"></span>
+            </div>
+
+            <button type="submit">Registrar Asistencia</button>
+        </form>
+    </main>
+    <footer class="footer"><span class="footer_span">   Desarrolado por: Jose A. para UIFCE</span>
+        </footer>
+    <script src="scripts/validacion.js"></script>
+</body>
+</html>
